@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--medium-spacing);
+    background-color: var(--background-light-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav button {
+    margin-left: var(--medium-spacing);
+}
+
+.header__nav button:first-child {
+    margin-left: 0;
+}

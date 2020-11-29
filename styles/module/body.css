@@ -1,0 +1,7 @@
+.body {
+    padding: var(--little-spacing);
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}

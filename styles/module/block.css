@@ -1,0 +1,12 @@
+.block {
+    margin: var(--little-spacing);
+    padding: var(--medium-spacing);
+    box-sizing: border-box;
+    border-radius: var(--radius);
+    background-color: var(--background-dark-1);
+}
+
+.block--test {
+    width: 200px;
+    height: 200px;
+}

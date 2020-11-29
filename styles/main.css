@@ -1,0 +1,68 @@
+/* Default */
+@import "default/reset.css";
+@import "default/content.css";
+/* Module */
+@import "module/logo.css";
+@import "module/header.css";
+@import "module/btn.css";
+@import "module/body.css";
+@import "module/block.css";
+@import "module/section.css";
+@import "module/install.css";
+/* Vars */
+:root {
+    --interface-size: 1280px;
+    --little-spacing: 10px;
+    --medium-spacing: 20px;
+    --large-spacing: 30px;
+    --radius: 5px;
+    --modal-shadow: rgba(0, 0, 0, 0.1);
+    --background-light-4: #909090;
+    --background-light-3: #747474;
+    --background-light-2: #4e4e4e;
+    --background-light-1: #242424;
+    --background: #1d1d1d;
+    --background-dark-1: #151515;
+    --main-color-light-3: #fff;
+    --main-color-light-2: #fff;
+    --main-color-light-1: #fff;
+    --main-color: #fff;
+    --main-color-dark-1: #f1f1f1;
+    --main-color-dark-2: #d2d2d2;
+    --main-color-dark-3: #a3a3a3;
+    --sub-color-light-2: #444;
+    --sub-color-light-1: #222;
+    --sub-color: #000;
+    --text-color: #fff;
+    --text-color-dark-1: #151515;
+    --neutral-color-light-3: #b3ecff;
+    --neutral-color-light-2: #80dfff;
+    --neutral-color-light-1: #4dd2ff;
+    --neutral-color: #00abe3;
+    --neutral-color-dark-1: #2373ff;
+    --neutral-color-dark-2: #1a5ac7;
+    --neutral-color-dark-3: #1547a0;
+    --red: #B12704;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background);
+}
+
+.test-banner {
+    text-align: center;
+    background-color: #252f62;
+}
+
+.test-banner img {
+    display: block;
+    margin: auto;
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+

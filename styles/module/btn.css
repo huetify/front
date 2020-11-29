@@ -1,0 +1,94 @@
+.btn {
+    border-radius: var(--radius);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn svg {
+    margin-right: 5px;
+}
+
+.btn--rounded {
+    border-radius: 20px;
+}
+
+.btn--icon {
+    border-radius: 50%;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+}
+
+.btn--icon svg {
+    margin-right: 0;
+}
+
+.btn--all {
+    width: 100%;
+}
+
+.btn:hover {
+    transition: background-color .4s;
+}
+
+.btn:active {
+    transition: initial;
+}
+
+.btn__default {
+    background-color: var(--background-light-2);
+    color: #fff;
+}
+
+.btn__default:hover {
+    background-color: var(--background-light-3);
+}
+
+.btn__default:active {
+    background-color: var(--background-light-4);
+}
+
+.btn__neutral {
+    background-color: var(--neutral-color);
+    color: #fff;
+}
+
+.btn__neutral:hover {
+    background-color: var(--neutral-color-dark-1);
+}
+
+.btn__neutral:active {
+    background-color: var(--neutral-color-dark-2);
+}
+
+.btn__success {
+    background-color: #2bb04a;
+    color: #fff;
+}
+
+.btn__success:hover {
+    background-color: #23903c;
+}
+
+.btn__success:active {
+    background-color: #165c26;
+}
+
+.btn__warning {
+    background-color: #ed3d0a;
+    color: #fff;
+}
+
+.btn__warning:hover {
+    background-color: #ef5023;
+}
+
+.btn__warning:active {
+    background-color: #d23507;
+}

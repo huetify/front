@@ -1,0 +1,27 @@
+.install {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.install-content {
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--medium-spacing);
+    margin: var(--medium-spacing);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo--install {
+    display: inline-block;
+    text-align: center;
+}
+
+.install__desc {
+    text-align: center;
+}

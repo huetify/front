@@ -1,0 +1,13 @@
+.seperator-little, .seperator-medium {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.seperator-little {
+    margin-top: var(--medium-spacing);
+}
+
+.seperator-medium {
+    margin-top: var(--medium-spacing);
+}
