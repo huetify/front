@@ -1,4 +1,8 @@
-export default function Input({ id, type, placeholder, value, onChange, name, className }) {
+export default function Input({
+                                  id, type, placeholder,
+                                  value, onChange, name,
+                                  className, minLength, maxLength
+}) {
 
     return (
         <div className={`input ${className || ''}`}>
@@ -11,6 +15,8 @@ export default function Input({ id, type, placeholder, value, onChange, name, cl
                     placeholder=""
                     value={value}
                     onChange={onChange}
+                    minLength={minLength}
+                    maxLength={maxLength}
                 />
                 <div className="input__placeholder"><span>{ placeholder }</span></div>
             </label>

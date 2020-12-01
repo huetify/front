@@ -23,6 +23,21 @@
     margin: 0 var(--little-spacing);
 }
 
+.form__error {
+    background-color: var(--red);
+    color: #fff;
+    box-sizing: border-box;
+    padding: var(--little-spacing);
+    margin: var(--medium-spacing) var(--little-spacing) 0;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+}
+
+.form__error svg {
+    margin-right: var(--little-spacing);
+}
+
 .input {
     margin-top: var(--large-spacing);
     height: 48px;
@@ -45,6 +60,13 @@
     box-sizing: border-box;
     font-size: 14px;
     width: 100%;
+}
+
+.input__field--select {
+    cursor: pointer;
+    padding:0;
+    border-left:  13px solid var(--background);
+    border-right: 13px solid var(--background);
 }
 
 /*.input .input__field:not([disabled]):focus,*/
@@ -78,7 +100,8 @@
 }
 
 .input .input__field:not([disabled]):focus~.input__placeholder,
-.input .input__field[value]:not([value=""])~.input__placeholder
+.input .input__field[value]:not([value=""])~.input__placeholder,
+.input__placeholder--select
 {
     -webkit-transform: translateY(-30px) translateX(-20px);
     transform: translateY(-30px) translateX(-20px);

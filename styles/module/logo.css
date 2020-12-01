@@ -6,31 +6,11 @@
 
 .logo span {
     background: rgb(184,30,33);
-    background: linear-gradient(90deg, rgba(184,30,33,1) 0%, rgba(235,129,9,1) 16%, rgba(229,176,0,1) 35%, rgba(159,187,17,1) 55%, rgba(60,160,151,1) 76%, rgba(46,118,166,1) 100%);
+    background: linear-gradient(90deg, rgb(184, 30, 33) 0%, rgb(235, 129, 9) 16%, rgb(229, 176, 0) 35%, rgb(159, 187, 17) 55%, rgba(60,160,151,1) 76%, rgba(46,118,166,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .logo--large {
     font-size: 6rem;
-}
-
-.logo--bounce {
-    animation: bounce ease-in-out .25s 1 normal forwards;
-    opacity: 0;
-}
-
-@keyframes bounce {
-    0% {
-        opacity: 0;
-        transform: scale(.5);
-    }
-    80% {
-        opacity: 1;
-        transform: scale(1.025);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
