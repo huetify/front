@@ -1,0 +1,93 @@
+.form {
+    width: 100%;
+}
+
+.form__title {
+    display: block;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.form__body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form__content {
+    flex: 1;
+    margin: 0 var(--little-spacing);
+    min-width: 300px;
+}
+
+.form__submit {
+    margin: 0 var(--little-spacing);
+}
+
+.input {
+    margin-top: var(--large-spacing);
+    height: 48px;
+}
+
+.input__label {
+    display: block;
+    position: relative;
+}
+
+.input__field {
+    border-radius: var(--radius);
+    background-color: var(--background);
+    outline: none;
+    border: none;
+    padding: var(--medium-spacing);
+    display:block;
+    position: relative;
+    height: 48px;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+}
+
+/*.input .input__field:not([disabled]):focus,*/
+/*.input .input__field[value]:not([value=""])*/
+/*{*/
+/*    border: 2px solid red;*/
+/*}*/
+
+.input__placeholder{
+    font-size: 14px;
+    line-height: 1;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    margin-top: -9px;
+    left: 8px;
+    color: var(--background-light-4);
+    -webkit-transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+    transition: transform 150ms cubic-bezier(0.4,0,0.2,1),opacity 150ms cubic-bezier(0.4,0,0.2,1);
+    z-index: 1;
+    text-align: left;
+}
+
+.input__placeholder span{
+    padding: 4px;
+    display: block;
+}
+
+.input .input__field[disabled]~.input__placeholder span {
+    background: transparent;
+}
+
+.input .input__field:not([disabled]):focus~.input__placeholder,
+.input .input__field[value]:not([value=""])~.input__placeholder
+{
+    -webkit-transform: translateY(-30px) translateX(-20px);
+    transform: translateY(-30px) translateX(-20px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.input__field:-webkit-autofill,
+.input__field:-webkit-autofill:hover,
+.input__field:-webkit-autofill:focus,
+.input__field:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

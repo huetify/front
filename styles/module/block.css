@@ -6,6 +6,13 @@
     background-color: var(--background-dark-1);
 }
 
+.block > :first-child {
+    margin-top: 0 !important;
+}
+.block > :last-child {
+    margin-bottom: 0 !important;
+}
+
 .block--test {
     width: 200px;
     height: 200px;

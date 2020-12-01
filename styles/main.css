@@ -9,6 +9,7 @@
 @import "module/block.css";
 @import "module/section.css";
 @import "module/install.css";
+@import "module/form.css";
 /* Vars */
 :root {
     --interface-size: 1280px;
@@ -23,6 +24,7 @@
     --background-light-1: #242424;
     --background: #1d1d1d;
     --background-dark-1: #151515;
+    --background-dark-2: #111111;
     --main-color-light-3: #fff;
     --main-color-light-2: #fff;
     --main-color-light-1: #fff;
@@ -38,7 +40,7 @@
     --neutral-color-light-3: #b3ecff;
     --neutral-color-light-2: #80dfff;
     --neutral-color-light-1: #4dd2ff;
-    --neutral-color: #00abe3;
+    --neutral-color: #B12704;
     --neutral-color-dark-1: #2373ff;
     --neutral-color-dark-2: #1a5ac7;
     --neutral-color-dark-3: #1547a0;
@@ -46,11 +48,14 @@
 }
 
 body {
+    line-height: 1.6;
+    background-color: var(--background);
+}
+
+body, input, select {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background);
 }
 
 .test-banner {

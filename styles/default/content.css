@@ -1,13 +1,25 @@
-.seperator-little, .seperator-medium {
+.seperator {
     width: 100%;
-    height: 1px;
-    background-color: #fff;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-.seperator-little {
+.margin-top--little {
+    margin-top: var(--little-spacing);
+}
+
+.margin-top--medium {
     margin-top: var(--medium-spacing);
 }
 
-.seperator-medium {
+.margin-top--large {
+    margin-top: var(--large-spacing);
+}
+
+.title {
+    font-weight: bold;
+    font-size: 3rem;
     margin-top: var(--medium-spacing);
+    line-height: 1;
+    text-align: left;
 }
