@@ -5,6 +5,7 @@ import Head from "next/head";
 import getRawBody from "raw-body";
 import axios from "axios";
 import Cookies from 'cookies'
+import {goToHome, goToLogin, isAuth, setJWT} from "../internal/auth";
 
 export default function Login(props) {
     const [username, setUsername] = useState(props.post["username"]);
@@ -61,16 +62,8 @@ export async function getServerSideProps({req, res}) {
         }
     }
 
-    // Create a cookies instance
-    const cookies = new Cookies(req, res)
-
-    if(cookies.get('JWT') !== undefined) {
-        return {
-            redirect: {
-                destination: '/',
-                permanent: false,
-            },
-        }
+    if(isAuth(req, res)) {
+        return goToHome()
     }
 
     if(req.method === "POST") {
@@ -87,7 +80,7 @@ export async function getServerSideProps({req, res}) {
                 }
             )
             .then(r => {
-                cookies.set('JWT', r.data['access_token'])
+                setJWT(req, res, r.data['access_token'])
                 return {
                     redirect: {
                         destination: '/',

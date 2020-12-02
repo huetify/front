@@ -4,6 +4,10 @@ import Block from "../components/Block";
 import SectionTitle from "../components/SectionTitle";
 import Section from "../components/Section";
 import App from "../components/App";
+import Cookies from "cookies";
+import getRawBody from "raw-body";
+import axios from "axios";
+import {goToLogin, isAuth} from "../internal/auth";
 
 export default function Home() {
   return (
@@ -34,11 +38,15 @@ export default function Home() {
   )
 }
 
-// export async function getServerSideProps(context) {
-//     const data = {
-//         hotProducts: getHotProducts(1, 12),
-//     }
-//     return {
-//         props: data
-//     }
-// }
+export async function getServerSideProps({req, res}) {
+    let props = {
+        props: {
+        }
+    }
+
+    if(!isAuth(req, res)) {
+        return goToLogin()
+    }
+
+    return props;
+}

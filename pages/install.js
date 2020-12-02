@@ -6,6 +6,7 @@ import Head from "next/head";
 import getRawBody from "raw-body";
 import axios from "axios";
 import cookieCutter from 'cookie-cutter';
+import {goToHome} from "../internal/auth";
 
 export default function Install(props) {
     const [title, setTitle] = useState(props.post["title"]);
@@ -121,12 +122,7 @@ export async function getServerSideProps({req}) {
         .catch(() => { return false });
 
     if(!isAvailable) {
-        return {
-            redirect: {
-                destination: '/',
-                permanent: false,
-            },
-        }
+        return goToHome()
     }
 
     if (req.method === "POST") {
