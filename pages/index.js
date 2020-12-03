@@ -12,18 +12,17 @@ import {goToLogin, isAuth} from "../internal/auth";
 export default function Home() {
   return (
       <App>
-          <Section className="section--2">
-              <SectionTitle name="Toto's bridge" />
-              <Block className="block--test" />
-              <Block className="block--test" />
-              <Block className="block--test" />
-              <Block className="block--test" />
-              <Block className="block--test" />
-              <Block className="block--test" />
-              <Block className="block--test" />
-              <Block className="block--test" />
-          </Section>
-          <Section className="section--2">
+          <Block>
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          </Block>
+          <Section>
               <SectionTitle name="Toto's bridge" />
               <Block className="block--test" />
               <Block className="block--test" />

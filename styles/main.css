@@ -2,6 +2,7 @@
 @import "default/reset.css";
 @import "default/content.css";
 @import "default/animate.css";
+@import "default/scrollbar.css";
 /* Module */
 @import "module/logo.css";
 @import "module/header.css";
@@ -73,3 +74,9 @@ body, input, select {
     width: 100%;
 }
 
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}

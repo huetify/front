@@ -6,11 +6,11 @@ import Block from "./Block";
 
 export default function App({ children }) {
     return (
-        <>
+        <div className="app">
             <Header />
             <Body>
                 { children }
             </Body>
-        </>
+        </div>
     )
 }
