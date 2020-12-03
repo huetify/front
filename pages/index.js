@@ -8,10 +8,12 @@ import Cookies from "cookies";
 import getRawBody from "raw-body";
 import axios from "axios";
 import {goToLogin, isAuth} from "../internal/auth";
+import DashBlock from "../components/DashBlock";
 
 export default function Home() {
   return (
       <App>
+          <DashBlock />
           <Block>
               <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
               <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />

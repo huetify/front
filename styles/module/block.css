@@ -6,6 +6,11 @@
     background-color: var(--background-dark-1);
 }
 
+.block:hover {
+    transition: box-shadow .4s;
+    box-shadow: 0 0 10px var(--background-light-1);
+}
+
 .block > :first-child {
     margin-top: 0 !important;
 }

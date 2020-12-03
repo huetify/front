@@ -1,0 +1,34 @@
+.dashblock {
+    width: 100%;
+    display: flex;
+}
+
+.dashblock__item {
+    position: relative;
+    width: calc(25% - var(--medium-spacing));
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashblock__content {
+    text-align: center;
+}
+
+.dashblock__value {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.dashblock__title {
+    line-height: 1.2;
+    font-size: 1.6rem;
+}
+
+.dashblock__item svg {
+    display: block;
+    transform: rotate(-15deg) scale(3);
+    color: #fff;
+}

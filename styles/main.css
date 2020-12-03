@@ -13,6 +13,7 @@
 @import "module/install.css";
 @import "module/login.css";
 @import "module/form.css";
+@import "module/dashblock.css";
 /* Vars */
 :root {
     --interface-size: 1280px;
