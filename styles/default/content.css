@@ -23,3 +23,7 @@
     line-height: 1;
     text-align: left;
 }
+
+.block--default {
+    margin: var(--little-spacing);
+}

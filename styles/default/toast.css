@@ -1,0 +1,7 @@
+.Toastify__toast--dark {
+    background-color: var(--background-dark-1);
+}
+
+.Toastify__progress-bar--dark {
+    background: linear-gradient(to right, var(--hue-red), var(--hue-orange), var(--hue-yellow), var(--hue-green));
+}

@@ -1,7 +1,9 @@
-export default function Body({ children }) {
+export default function Body({ children, className }) {
     return (
         <div className="body">
-            { children }
+            <div className={`body__wrapper ${className || ''}`}>
+                { children }
+            </div>
         </div>
     )
 }

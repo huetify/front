@@ -3,6 +3,7 @@
 @import "default/content.css";
 @import "default/animate.css";
 @import "default/scrollbar.css";
+@import "default/toast.css";
 /* Module */
 @import "module/logo.css";
 @import "module/header.css";
@@ -14,6 +15,8 @@
 @import "module/login.css";
 @import "module/form.css";
 @import "module/dashblock.css";
+/* Pages */
+@import "page/add.css";
 /* Vars */
 :root {
     --interface-size: 1280px;
@@ -49,6 +52,11 @@
     --neutral-color-dark-2: #1a5ac7;
     --neutral-color-dark-3: #1547a0;
     --red: #B12704;
+    --success-color: #2bb04a;
+    --hue-red: #B81E21;
+    --hue-orange: #EB8109;
+    --hue-yellow: #E5B000;
+    --hue-green: #9FBB11;
 }
 
 body {
@@ -80,4 +88,9 @@ body, input, select {
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

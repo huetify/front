@@ -9,7 +9,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .dashblock__content {
@@ -28,7 +28,10 @@
 }
 
 .dashblock__item svg {
+    position: absolute;
+    left: 0;
     display: block;
-    transform: rotate(-15deg) scale(3);
+    transform: rotate(-15deg);
+    height: 90px;
     color: #fff;
 }

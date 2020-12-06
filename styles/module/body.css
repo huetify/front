@@ -1,9 +1,13 @@
 .body {
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+}
+
+.body__wrapper {
     padding: var(--little-spacing);
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    flex: 1;
-    overflow: auto;
 }

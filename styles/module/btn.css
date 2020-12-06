@@ -33,6 +33,10 @@
     width: 100%;
 }
 
+.btn--flex {
+    flex: 1;
+}
+
 .btn:hover {
     transition: background-color .4s;
 }
@@ -68,7 +72,7 @@
 }
 
 .btn__success {
-    background-color: #2bb04a;
+    background-color: var(--success-color);
     color: #fff;
 }
 

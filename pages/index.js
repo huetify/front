@@ -9,21 +9,16 @@ import getRawBody from "raw-body";
 import axios from "axios";
 import {goToLogin, isAuth} from "../internal/auth";
 import DashBlock from "../components/DashBlock";
+import Btn from "../components/Btn";
 
 export default function Home() {
   return (
       <App>
           <DashBlock />
-          <Block>
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-          </Block>
+          <Section className="section--2">
+              <Btn type="success" className="block--default btn--flex">Search new product</Btn>
+              <Btn type="success" className="block--default btn--flex">Search new bridge</Btn>
+          </Section>
           <Section>
               <SectionTitle name="Toto's bridge" />
               <Block className="block--test" />

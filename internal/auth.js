@@ -4,17 +4,21 @@ import jwt from "jsonwebtoken";
 export function setJWT(req, res, token) {
     const cookies = new Cookies(req, res)
     const payload = jwt.decode(token)
-    cookies.set('JWT', token, {expires: new Date(payload.exp * 1000)});
+    cookies.set('JWT', token, {expires: new Date(payload.exp * 1000)})
 }
 
 export function unsetJWT(req, res) {
     const cookies = new Cookies(req, res)
-    cookies.set('JWT', {expires: Date.now()});
+    cookies.set('JWT', {expires: Date.now()})
 }
 
 export function isAuth(req, res) {
     const cookies = new Cookies(req, res)
-    return cookies.get('JWT') !== undefined;
+    return cookies.get('JWT') !== undefined
+}
+
+export function getToken(req, res) {
+    return new Cookies(req, res).get('JWT')
 }
 
 export function goToLogin() {
